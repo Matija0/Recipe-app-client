@@ -12,15 +12,19 @@ import CreateRecipe from './pages/CreateRecipe';
 function App() {
   return (
     <div className="App">
-        <Navbar/>
+        <div className=' w-1/4 '><Navbar/></div>
+        <div className=' w-1/2'>
         <Routes>
           <Route exact path='/' element={<Home/>} />
           <Route exact path="/login" element={<Login/>}/>
           <Route exact path='/register' element={<Register/>} />
           <Route exact path='/createrecipe' element={<CreateRecipe/>} />
           <Route exact path='/savedrecipes' element={<SavedRecipes/>}/>
-        </Routes>
-     
+        </Routes> 
+        </div>
+        <div className='w-1/4 bg-white'>
+
+        </div>
     </div>
   );
 }

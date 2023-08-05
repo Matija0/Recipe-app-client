@@ -70,7 +70,7 @@ const Navbar = () => {
               </div>
             </Link>
             <div className="pl-14">
-              <button onClick={logout}>
+              <button onClick={logout} className="hover:text-indigo-600">
                 <i class="bi bi-box-arrow-left"></i> Logout
               </button>
             </div>
@@ -86,7 +86,7 @@ const Navbar = () => {
           <h1 className=" text-amber-500">Dish</h1>
         </div>
         <div>
-          <Button ref={btnRef} colorScheme="cyan" onClick={onOpen}>
+          <Button ref={btnRef}  onClick={onOpen}>
           <i class="bi bi-list"></i>
           </Button>
           <Drawer
